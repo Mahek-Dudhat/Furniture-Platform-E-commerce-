@@ -1,0 +1,207 @@
+.payment-status {
+    background: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.payment-success {
+    color: #2e7d32;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.payment-cod {
+    color: #f57c00;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.payment-id {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.loading-container,
+.error-container {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #8B6F47;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.order-confirmation-page {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.ordercon-container {
+    margin-top: 7rem;
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: #4caf50;
+    color: white;
+    font-size: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.order-confirmation-page h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.order-number {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.confirmation-content {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    text-align: left;
+}
+
+.order-details, .shipping-info {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-details h2, .shipping-info h2 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.order-items {
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.order-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.order-item div {
+    flex: 1;
+}
+
+.order-item p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.item-total {
+    font-weight: bold;
+}
+
+.order-pricing {
+    border-top: 2px solid #eee;
+    padding-top: 15px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.price-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #333;
+}
+
+.shipping-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #8b4513;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #6d3410;
+}
+
+.btn-secondary {
+    background: white;
+    color: #8b4513;
+    border: 2px solid #8b4513;
+}
+
+.btn-secondary:hover {
+    background: #f9f5f0;
+}
+
+@media (max-width: 768px) {
+    .confirmation-content {
+        grid-template-columns: 1fr;
+    }
+}

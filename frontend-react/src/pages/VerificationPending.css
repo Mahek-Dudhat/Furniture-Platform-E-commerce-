@@ -1,0 +1,152 @@
+/* src/pages/VerificationPending.css */
+.verification-pending-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+}
+
+.verification-pending-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+}
+
+.email-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.verification-pending-card h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.main-message {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.email-address {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8B6F47;
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 20px 0;
+    word-break: break-all;
+}
+
+.instructions {
+    text-align: left;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 25px 0;
+}
+
+.instructions p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.instructions ol {
+    margin-left: 20px;
+    color: #666;
+}
+
+.instructions li {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.info-box {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.info-box p {
+    margin: 0;
+    color: #856404;
+    font-size: 14px;
+}
+
+.message {
+    padding: 12px;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+.message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.btn-resend {
+    background: #8B6F47;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 20px 0;
+}
+
+.btn-resend:hover:not(:disabled) {
+    background: #6B5437;
+    transform: translateY(-2px);
+}
+
+.btn-resend:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.footer-links {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-links a {
+    color: #8B6F47;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .verification-pending-card {
+        padding: 30px 20px;
+    }
+
+    .verification-pending-card h2 {
+        font-size: 24px;
+    }
+}

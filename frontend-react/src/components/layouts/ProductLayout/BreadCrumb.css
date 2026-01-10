@@ -1,0 +1,12 @@
+.breadcrumb a {
+  color: black;
+  text-decoration: none;
+}
+
+nav .container{
+  padding-top: 2rem;
+}
+
+.breadcrumb .active {
+  color: #666;
+}

@@ -1,0 +1,140 @@
+.track-order-page {
+    padding: 40px 20px;
+    min-height: 80vh;
+    background: #f9f9f9;
+}
+
+.track-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.track-header h1 {
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+    color: #2c2c2c;
+}
+
+.order-number {
+    color: #8b6f47;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.track-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.track-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.track-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+    color: #2c2c2c;
+}
+
+.track-card p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.delivery-date {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    color: #8b6f47 !important;
+}
+
+.total-amount {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: #2c2c2c !important;
+    margin-top: 10px !important;
+}
+
+.track-items {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.track-items h3 {
+    margin: 0 0 20px 0;
+    font-size: 1.2rem;
+    color: #2c2c2c;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.track-item {
+    display: flex;
+    gap: 12px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.track-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.track-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.track-item-info {
+    flex: 1;
+}
+
+.item-name {
+    font-weight: 600;
+    color: #2c2c2c;
+    margin: 0 0 5px 0;
+    font-size: 0.9rem;
+}
+
+.item-qty {
+    color: #666;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .track-order-page {
+        padding: 30px 15px;
+    }
+
+    .track-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .order-number {
+        font-size: 1rem;
+    }
+
+    .track-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .items-grid {
+        grid-template-columns: 1fr;
+    }
+}

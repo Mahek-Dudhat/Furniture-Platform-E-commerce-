@@ -1,0 +1,262 @@
+/* Split-screen layout for authentication pages */
+.auth-split-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.auth-form-section {
+    flex: 0 0 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.auth-slider-section {
+    flex: 0 0 55%;
+    position: sticky;
+    right: 0;
+    top: 0;
+    width: 55%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.login-container {
+    margin-top: 7.5rem;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.login-content {
+    max-width: 550px;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    background-color: white;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(139, 111, 71, 0.12);
+    border: 1px solid rgba(139, 111, 71, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-close-btn:hover {
+    color: #8b6f47;
+    transform: rotate(90deg);
+}
+
+.login-header h1 {
+    color: #4a4a4a;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.login-container>p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.login-btn {
+    width: 50%;
+    padding: 14px;
+    background: linear-gradient(135deg, #8b6f47 0%, #a67c52 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 111, 71, 0.3);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: linear-gradient(135deg, #6d5435 0%, #8b6f47 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 111, 71, 0.4);
+}
+
+.login-btn:active {
+    transform: translateY(0);
+}
+
+.btn-container {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.form-container {
+  
+    padding-top: 1.5rem;
+    
+}
+
+.form-container p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.form-container a {
+    color: #8b6f47 !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.form-container a:hover {
+    color: #6d5435 !important;
+}
+
+/*CSS for Login Google Button*/
+
+.google-auth-section {
+    width: 83%;
+    margin: 0 auto;
+}
+
+.google-login-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 24px;
+    background: white;
+    border: 2px solid #dadce0;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #3c4043;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.google-login-btn:hover {
+    background: #f8f9fa;
+    border-color: #c6c9cc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.google-login-btn:active {
+    background: #f1f3f4;
+}
+
+.google-login-btn svg {
+    flex-shrink: 0;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #dadce0;
+}
+
+.divider span {
+    padding: 0 15px;
+    font-weight: 500;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+.form-group {
+    justify-self: center;
+    position: relative;
+}
+
+/* MUI TextField Customization */
+.form-group .MuiOutlinedInput-root {
+    border-radius: 8px;
+}
+
+.form-group .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #8b6f47;
+}
+
+.form-group .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #8b6f47;
+}
+
+.form-group .MuiInputLabel-root.Mui-focused {
+    color: #8b6f47;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        width: 95%;
+        padding: 2rem 1.5rem;
+    }
+
+    .login-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .login-close-btn {
+        top: 10px;
+        right: 15px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .login-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .login-btn {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+}

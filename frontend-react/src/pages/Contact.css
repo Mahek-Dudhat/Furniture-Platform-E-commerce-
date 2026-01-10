@@ -1,0 +1,159 @@
+.contact-page {
+  max-width: 1700px;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-left: 0;
+}
+
+.contact-hero {
+  text-align: center;
+  padding: 4rem 2rem 3rem;
+  background: linear-gradient(135deg, #8b6f47 0%, #a67c52 100%);
+  color: white;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.contact-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+
+}
+
+.contact-info {
+  justify-self: center;
+}
+
+.info-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px dashed #DDDADA;
+  transition: border .3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-icon:hover {
+  border: 1px solid #a67c52;
+}
+
+.contact-form-wrapper {
+  padding: 2rem;
+}
+
+.contact-form-wrapper h2 {
+  font-size: 2rem;
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+input, #subject, textarea {
+  width: 100%;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+textarea {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 1px solid rgb(119, 109, 109);
+  padding: 1rem;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(166, 124, 82, 0.5);
+}
+
+.form-subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #8b6f47 0%, #a67c52 100%);
+  color: white;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(139, 111, 71, 0.3);
+}
+
+.submit-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.map-section {
+  width: 100vw;
+  padding: 0rem;
+}
+
+.map-section iframe {
+  display: block;
+  filter: grayscale(20%);
+}
+
+/* When error occured:- */
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #dc3545;
+  background: #fff5f5;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+/* When your form is successfully submitted:- */
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #28a745;
+  animation: slideDown 0.4s ease;
+}

@@ -1,0 +1,119 @@
+.resend-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 2rem 1rem;
+}
+
+.resend-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(139, 111, 71, 0.12);
+    padding: 2.5rem;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid rgba(139, 111, 71, 0.08);
+}
+
+.resend-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.resend-header h2 {
+    color: #4a4a4a;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.resend-header p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.resend-form {
+    margin-bottom: 1.5rem;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.875rem;
+    background: linear-gradient(135deg, #8b6f47 0%, #a67c52 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 111, 71, 0.3);
+}
+
+.btn-submit:hover:not(:disabled) {
+    background: linear-gradient(135deg, #6d5435 0%, #8b6f47 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 111, 71, 0.4);
+}
+
+.btn-submit:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.btn-submit:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.resend-footer {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.resend-footer a {
+    color: #8b6f47;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.resend-footer a:hover {
+    color: #6d5435;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .resend-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .resend-header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .resend-container {
+        padding: 1rem;
+    }
+
+    .resend-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .resend-header h2 {
+        font-size: 1.35rem;
+    }
+
+    .btn-submit {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+}
